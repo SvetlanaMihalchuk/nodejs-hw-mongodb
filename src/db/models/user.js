@@ -20,8 +20,7 @@ const userSchema = new Schema(
       required: true,
     },
   },
-  // createdAt - дата створення
-  // updatedAt - дата оновлення},
+
   {
     versionKey: false,
     timestamps: true,
