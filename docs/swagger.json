@@ -243,6 +243,9 @@
               }
             }
           },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
           "401": {
             "$ref": "#/components/responses/401"
           }
@@ -302,6 +305,9 @@
                 }
               }
             }
+          },
+          "400": {
+            "$ref": "#/components/responses/400"
           },
           "401": {
             "$ref": "#/components/responses/401"
@@ -369,11 +375,6 @@
                       "personal"
                     ],
                     "example": "family"
-                  },
-                  "userId": {
-                    "description": "Contact's user id",
-                    "type": "string",
-                    "example": "65e4decdd286b30065d54af9"
                   },
                   "photo": {
                     "description": "Contact's photo",
@@ -453,6 +454,9 @@
           "204": {
             "description": "Successfully deleted contact"
           },
+          "400": {
+            "$ref": "#/components/responses/400"
+          },
           "401": {
             "$ref": "#/components/responses/401"
           },
@@ -514,6 +518,11 @@
             ],
             "example": "home"
           },
+          "userId": {
+            "description": "Contact's user id",
+            "type": "string",
+            "example": "65e4decdd286b30065d54af9"
+          },
           "photo": {
             "description": "Link to contact's photo",
             "type": "string",
@@ -551,7 +560,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "65ca67e7ae7f10c88b598384 not valid id"
+                      "example": "User not found"
                     }
                   }
                 }

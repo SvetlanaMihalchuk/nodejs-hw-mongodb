@@ -15,22 +15,9 @@ parameters:
 responses:
   '204':
     description: Successfully deleted contact
-    # content:
-    #   application/json:
-    #     schema:
-    #       type: object
-    #       required:
-    #         - status
-    #         - message
-    #       properties:
-    #         status:
-    #           type: integer
-    #           example: 204
-    #         message:
-    #           type: string
-    #           example: Successfully deleted contact with id 65ca67e7ae7f10c88b598384!
+  '400':
+    $ref: '../../../components/responses/400.yaml'
   '401':
     $ref: '../../../components/responses/401.yaml'
   '404':
     $ref: '../../../components/responses/404.yaml'
-

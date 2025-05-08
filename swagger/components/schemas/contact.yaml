@@ -30,10 +30,10 @@ properties:
     description: "Contact's type"
     enum: ['work', 'home', 'personal']
     example: 'home'
-  # userId:
-  #   description: "Contact's user id"
-  #   type: string
-  #   example: 65e4decdd286b30065d54af9
+  userId:
+    description: "Contact's user id"
+    type: string
+    example: 65e4decdd286b30065d54af9
   photo:
     description: "Link to contact's photo"
     type: string
