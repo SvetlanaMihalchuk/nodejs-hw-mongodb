@@ -481,7 +481,8 @@
           "_id",
           "name",
           "phoneNumber",
-          "contactType"
+          "contactType",
+          "userId"
         ],
         "properties": {
           "_id": {
@@ -560,7 +561,7 @@
                   "properties": {
                     "message": {
                       "type": "string",
-                      "example": "User not found"
+                      "example": "Please revise your entry and try again"
                     }
                   }
                 }
